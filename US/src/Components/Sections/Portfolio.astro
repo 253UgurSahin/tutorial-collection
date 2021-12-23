@@ -1,0 +1,14 @@
+---
+    import TabComponent from '../Tabs/TabComponent.jsx';
+    import tabs from '../Tabs/tabs.js';
+
+
+    const { portfolioItems } = Astro.props;
+---
+<div id="portfolio" class="section bg-gray-100">
+    <div class="w-full flex justify-center">    
+        <h2 class="line">Portfolio</h2>
+    </div>
+
+    <TabComponent tabs={tabs} tabItems={portfolioItems} client:visible />
+</div>

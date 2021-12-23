@@ -1,0 +1,20 @@
+---
+import ReactCount from '../components/ReactCounter.jsx';
+import VueCount from '../components/VueCounter.vue';
+
+
+let title = 'My Astro Site';
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/style/global.css">
+</head>
+<body>
+    <ReactCount client:visible/>
+    <VueCount client:visible/>
+</body>
+</html>

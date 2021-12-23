@@ -1,0 +1,23 @@
+---
+import BaseHead from '../Components/BaseHead.astro';
+---
+<html lang="en">
+    <head>
+        <BaseHead title="404" />
+    </head>
+
+    <body>
+        <div class="w-full min-h-screen flex justify-center items-center px-3" style="background-image: url(/assets/bg/bg_hero.svg)">
+            <div class="text-white text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-center">
+                <div class="text-5xl sm:text-6xl md:text-8xl">Congrats!</div>
+                <div>You have found a <span class="block md:inline-block text-lightgreen text-6xl md:text-7xl">404</span> page</div>
+                <div class="text-3xl mt-6">
+                    Just make sure your on the right page or
+                    <a href="http://localhost:3000/">
+                        <button class="btn"> Go back </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

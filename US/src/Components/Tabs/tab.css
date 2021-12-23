@@ -1,0 +1,27 @@
+:root {
+    --white: #fff;
+    --black: #333;
+    --honeyyellow: #EDFFEC;
+    --lightgreen: #61E786;
+    --lightgray: #5A5766;
+    --darkgray: #48435C;
+    --purple: #9792E3;
+}
+.tab-links { margin: auto; display: flex; justify-content: space-center; }
+.tab .a { text-decoration: none; color: var(--active-color); transition: all ease .4s;}
+
+.tab::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    background: none;
+    transition: background 0.5s ease;
+}
+.tab.active::before { background: var(--active-color); }
+
+.tab span { font-weight: 700; margin-left: 10px; transition: color 0.5s ease; }
+.tab.active span { color: var(--active-color); }
+.tab.active .a { color: var(--active-color); }
+.tab .a { padding: 13px; display: flex; align-items: center; font-size: 20px; overflow: hidden; position: relative; height: 100%; }

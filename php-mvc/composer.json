@@ -1,0 +1,15 @@
+{
+    "name": "ugur/php-mvc",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "253ugursahin",
+            "email": "ugurs156@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+
+.scroll-smooth { scroll-behavior: smooth; }
+h2 { @apply uppercase transition-all text-5xl text-center font-bold text-darkgray; }
+h3 { @apply uppercase transition-all text-3xl text-center font-bold text-darkgray; }
+.line::after { content: "";  @apply w-2/3 h-1 bg-lightgreen block mx-auto transition mt-3 mb-12; }
+
+@tailwind utilities;
+
+@layer components {
+    .btn { @apply block mx-auto mt-3 px-6 py-2 border-2 border-white transition-all duration-300 rounded-3xl hover:rounded-xl text-white uppercase font-semibold; }
+    .section { @apply relative transition-all py-24; }
+}

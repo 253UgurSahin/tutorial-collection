@@ -1,0 +1,59 @@
+// imports
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;800&display=swap');
+// global
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// app
+.app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("/assets/bg.svg");
+    background-size: cover;
+}
+// container
+.container {
+    width: 100%;
+    padding: 0 .7rem;
+
+    @include media-width($wsm);
+    @include media-width($wmd);
+    @include media-width($wlg);
+    @include media-width($wxl);
+    @include media-width($wxxl);
+}
+// other
+.w-full { width: 100%; }
+// flex
+.flex { display: flex; }
+.nowrap { flex-wrap: nowrap; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.just-center { justify-content: center; }
+.item-center { align-items: center; }
+// title
+h2 {
+    font-size: $xxxl;
+    font-weight: 300;
+}
+// marging
+.mt-10 { margin-top: 2rem; }
+.mx-10 { margin: 2rem 0px; }
+// text color
+.t-pink { color: $pink }
+// error
+.error-message {
+    border: 1px solid red;
+    color: red;
+    padding: 10px 20px;
+    background: rgba(255,0,0,0.1);
+    border-radius: 5px;
+}

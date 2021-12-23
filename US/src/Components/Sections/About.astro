@@ -1,0 +1,27 @@
+---
+    import { Markdown } from 'astro/components';
+    import Slider from '../Slider.vue';
+
+    let slides = [
+        "js.svg", "react.svg", "vue.svg", "nextjs.png", "nodejs.png", "php.png", "laravel.svg", "statamic.png", "mysql.png", "firebase.png", "tailwindcss.png", "github.png",
+        "js.svg", "react.svg", "vue.svg", "nextjs.png", "nodejs.png", "php.png", "laravel.svg", "statamic.png", "mysql.png", "firebase.png", "tailwindcss.png", "github.png",
+    ];
+---
+
+<div id="aboutme" class="section">
+    <div class="w-full flex justify-center">    
+        <h2 class="line">About</h2>
+    </div>
+
+    <div class="prose mx-auto">
+        <Markdown>
+            In 2021 ben ik afgestudeerd voor de opleiding web developer aan ’t Grafisch Lyceum Utrecht, MBO niveau 4. 
+            Tijdens mijn studie heb ik veel ervaring opgedaan, zowel tijdens de lessen als in mijn vrije tijd.
+            Ik ben in staat om zowel websites als api's te realiseren en te bouwen met verschillende soorten frameworks / programmeertalen. 
+
+            Ik ben heel leergierig, hardwerkend en flexibel, in mijn vrijetijd probeer ik zoveel mogelijk kennis op te doen met alle oplossingen die de wijde wereld van ict te bieden heeft.
+        </Markdown>
+    </div>
+
+    <Slider slides={slides} maxWidth="100%" />
+</div>

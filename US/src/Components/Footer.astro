@@ -1,0 +1,46 @@
+---
+const year = new Date().getFullYear();
+
+let socials = [
+    {
+        icon: "fab fa-linkedin-in",
+        data: "https://www.linkedin.com/in/ugur-sahin-07456b18a/",
+        extra: "",
+    },
+    {
+        icon: "far fa-envelope",
+        data: "mailto:ugurs156@gmail.com",
+        extra: "ugurs156@gmail.com",
+    },
+    {
+        icon: "fas fa-phone-alt",
+        data: "tel:0634827299",
+        extra: "06 34827299",
+    },
+    {
+        icon: "fab fa-github",
+        data: "https://github.com/253UgurSahin",
+    },
+];
+
+---
+
+<footer class="w-full">
+    <div class="w-full bg-darkgray py-3 flex flex-row flex-wrap gap-8 justify-center items-center text-2xl text-white">
+        {
+            socials.map(social => (
+                <span class="cursor-pointer transition flex justify-center hover:text-lightgreen relative group">
+                    {social.extra && <div class="absolute scale-0 group-hover:scale-100 transition duration-100 text-gray-800 text-lg bottom-14 font-semibold whitespace-nowrap">{ social.extra }</div> }
+                    <a href={social.data}><i class={social.icon}></i></a>
+                </span>
+            ))
+        }
+    </div>
+    <div class="w-full p-2 bg-gray-800 border-t-4 border-purple">
+        <div class="text-white flex flex-wrap gap-3 mx-auto justify-center cursor-default">
+            <p class="italic">Ugur Sahin</p>
+            <p> &copy;{ year }.</p>
+            <p class="hover:line-through ">All rights reserved.</p>
+        </div>
+    </div>
+</footer>

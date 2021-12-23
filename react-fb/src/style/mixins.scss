@@ -1,0 +1,8 @@
+// media queries for width
+@mixin media-width($size) {
+    @media (min-width: $size) { max-width: $size; }
+}
+// media queries for other css
+@mixin media($size) {
+    @media (min-width: $size) { @content; }
+}

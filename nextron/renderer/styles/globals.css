@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+/* input */
+.input { @apply appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:z-10 sm:text-sm; }
+.input-indigi { @apply focus:ring-indigo-500 focus:border-indigo-500; }
+/* btn */
+.btn { @apply py-2 px-3 w-auto outline-none rounded-md border border-transparent text-center cursor-pointer; }
+.btn-indigo { @apply text-white bg-indigo-600 hover:bg-indigo-700; }
+.btn-red-hover { @apply hover:text-white hover:border-white hover:bg-red-600; }
+.btn-blue { @apply text-white bg-blue-500 hover:bg-blue-600; }
+
+@tailwind utilities;

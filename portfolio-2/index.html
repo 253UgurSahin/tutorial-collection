@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugur Sahin</title>
+    <meta name="description" content="The Website of Ugur Sahin" />
+    <meta name="keywords" content="Ugur Sahin" />
+    <meta name="author" content="Ugur Sahin" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+
+    <style>
+        @import url("https://rsms.me/inter/inter.css");
+
+        html { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  
+        .gradient { background-image: url('./bg-1.svg'); }
+  
+        .browser-mockup {
+            border-top: 2em solid rgba(230, 230, 230, 0.7);
+            position: relative;
+            background-image: url('./Scattered-Forcefields.svg');
+            background-size: cover;
+        }
+  
+        .browser-mockup:before {
+          display: block;
+          position: absolute;
+          content: "";
+          top: -1.25em;
+          left: 1em;
+          width: 0.5em;
+          height: 0.5em;
+          border-radius: 50%;
+          background-color: #f44;
+          box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+        }
+  
+        .browser-mockup > * { display: block; }
+        
+        .a__color { color: #ff00ff; }
+        .a__color:hover { color: #be57ff ; }
+
+        .icon { width: 31.5px; height: 37px; }
+      </style>
+</head>
+<body class="gradient">
+    <div class="flex justify-center items-center w-full mx-auto content-end">
+        <div class="max-w-screen-2xl browser-mockup flex flex-1 m-6 md:px-0 md:m-12 bg-white w-1/2 rounded shadow-xl">
+            <div class="w-full relative transtion-all duration-200 container p-2 mx-auto" style="min-height: 80vh;">
+                <div class="h-full flex flex-col justify-center items-center">
+                    <h1 class="text-center text-6xl font-bold uppercase">Ugur Sahin</h1>
+                    <h5>Web Developer</h5>
+                    <div class="flex flex-wrap gap-3 items-center mt-5">
+                        <a class="transition text-4xl text-gray-700 hover:text-gray-900" target="blank" href="https://www.linkedin.com/in/ugur-sahin-07456b18a/" title="ugur sahin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a class="transition text-4xl text-gray-700 hover:text-gray-900" href="email:ugurs156@gmail.com" title="ugurs156@gmail.com">
+                            <i class="far fa-envelope"></i>
+                        </a>
+
+                        <a class="transition text-4xl text-gray-700 hover:text-gray-900" href="" title="cv" download>
+                            <img width="31.5" height="31.5px" src="./CV-42.png" alt="cv icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
